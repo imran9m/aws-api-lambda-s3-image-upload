@@ -1,6 +1,6 @@
 # AWS Upload Image to S3 via ApiGateway & Lambda
 
-A sample repo to which demonstrates uploading images to S3 via Api Gateway - Lambda integration.
+A sample repository which demonstrates uploading images to S3 via Api Gateway - Lambda integration.
 
 # Instructions
 
@@ -14,11 +14,11 @@ https://serverless.com/framework/docs/providers/aws/guide/installation/
 
 4. Now run "serverless deploy" which does actual infrastructure deployment.
 
-5. Output should give API Gateway Endpoint - something like https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler
+5. Output should give API Gateway Endpoint which is created - something like https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler
 
 6. Run API call to upload the image with base64 encoded string in JSON. (Visit https://www.browserling.com/tools/image-to-base64 for converting image to base64 online)
 
-Example - 
-https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler?username=sampleavatar
-Content-Type: application/json
-Take the payload from - request.json
+Example -     
+https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler?username=sampleavatar     
+Content-Type: application/json     
+Take the JSON payload from - request.json file    
